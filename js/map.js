@@ -1,7 +1,5 @@
 let map;
 
-
-
 // Create the script tag, set the appropriate attributes
 var script = document.createElement('script');
 script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBUy82OhNZYJtvWWjw-9jt-TUKrEczafeI&callback=initMap';
@@ -20,12 +18,12 @@ window.initMap = function() {
           }
     });
 
-    var marker = new google.maps.Marker({
-        position: myLatLng,
-        map: map,
-        draggable:true,
-        title:"Drag me!"
-      });
+    // var marker = new google.maps.Marker({
+    //     position: myLatLng,
+    //     map: map,
+    //     draggable:true,
+    //     title:"Drag me!"
+    //   });
 };
 
 // Append the 'script' element to 'head'

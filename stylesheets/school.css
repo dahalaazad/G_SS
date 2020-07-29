@@ -4,11 +4,6 @@
     margin-right: 200px;
 }
 
-li.nav-item {
-    margin-left: 2%;
-    margin-right: 2%;
-}
-
 #map {
     margin-left: 15%;
     width: 70%;
@@ -19,4 +14,3 @@ li.nav-item {
 a.nav-link, a.dropdown-item {
     font-size: 2em;
 }
-

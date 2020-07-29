@@ -4,15 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GESS</title>
-    <link rel="stylesheet" href="school.css">
     
+    <link rel="stylesheet" type="text/css" href="./stylesheets/scss/style.css">
+    <link rel="stylesheet"   href="/stylesheets/school.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <script src="./map.js"></script>
-    <script src="./popUpModal.js"></script>
-    <script src="https://kit.fontawesome.com/4e83ca7310.js"></script>
+    
     
     
 </head>
@@ -32,41 +28,58 @@
             </div>
         </div>
     </div> 
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark navbar-light justify-content-sm-start fixed-top">
         <!-- Brand -->
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand order-1 order-lg-0 mg-lg-0 ml-2 mr-0" href="#">
             <img class="logo" src="./images/icon.png" alt="Gess Logo">
         </a>
+
+        <button class="navbar-toggler align-self-start"
+                type="button">
+              <span class="navbar-toggler-icon"></span>
+        </button>
       
-        <!-- Links -->
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Information</a>
-          </li>
+        
+        <div class="collapse navbar-collapse d-flex flex-column flex-lg-row flex-xl-row 
+                    justify-content-lg-end bg-dark p-3 p-lg-0 mt-5 mt-lg-0 mobileMenu" 
+                    id="navbarSupportedContent">
+            <!-- Links -->
           
+          <ul class="navbar-nav align-self-stretch">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Information</a>
+            </li>
+            
+        
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                Facilities
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Home</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="overlay"></div><br>
+      <br>
+      <br>
       
-          <!-- Dropdown -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              Facilities
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Home</a>
-              <a class="dropdown-item" href="#">Link 2</a>
-              <a class="dropdown-item" href="#">Link 3</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
-          </li>
-        </ul>
-      </nav><br>
+
+      <div><h1 style="text-align: center;">Since 2044</h1></div><br>
       <br>
       <br>
       <h3 style="text-align: center;">My Google Maps Demo</h3><br>
@@ -112,5 +125,17 @@
   
   </footer>
   <!-- Footer -->
+
+  <!--src js files-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="./js/popUpModal.js"></script>
+  <script src="./js/mobileMenu.js"></script>
+  <script src="./js/map.js"></script>
+  <script src="https://kit.fontawesome.com/4e83ca7310.js"></script>
+
+  <!--src js files-->
 </body>
 </html>
